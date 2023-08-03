@@ -1,0 +1,107 @@
+﻿Domain,Module/Questionnaire,VariableNameNHANES,VariableName,VariableNamePlots,Description,Type,Values
+,,SEQN,,SEQN,Respondent ID ,ID,
+,,SDDSRVYR,Survey cycle,SurveyCycle,,,"(1=1999-2000, 2=2001-2002, 3=2003-2004, 4=2005-2006, 5=2007-2008, 6=2009-2010, 7=2011-2012, 8=2013-2014, 9=2015-2016, 10=2017-2018)"
+,,preDM2,,preDM2,,Categorical (Comparison Groups),"(0 = not preDM/DM, 1 preDM/DM)"
+Sociodemographic,DEMO,RIAGENDR,Gender,Gender,Gender (as per NHANES),Categorical,"(0 = Male, 1=Female) "
+Sociodemographic,DEMO,RIDAGEYR,Age,Age,Age (in years) at survey screening,Continuous,
+Sociodemographic,DEMO,DMDCITZN,US citizenship,USCitizenship,US citizenship status,Binary,"(0=US Citizen, 1=Non-US Citizen)"
+Sociodemographic,DEMO,DMDHRGND,Household reference person gender,HHRefPersonGender,Gender of the household reference person (as per NHANES),Categorical,"(0 = Male, 1=Female) "
+Sociodemographic,DEMO,CountBorn,Country of birth,CountryofBirth,Born in US,Binary,"(0=US Born, 1=Non-US Born)"
+Sociodemographic,DEMO,NatAcc,Nativity acculturation score,Nativity,"Nativity acculturation score, determined by the duration stayed in US",Ordinal,"(0=0-5 years in US, 1=5-10 years in US, 2=10+ years in US, 3=US Born)"
+Sociodemographic,DEMO,EducGrp,Education level,Education,Highest education level,Ordinal,"(0=Elementary/Middle School, 1=Incomplete High School, 2=Completed High School or higher)"
+Sociodemographic,DEMO,HHRAge,Household reference person age,HHRefPersonAge,Age (in years) of the household reference person at survey screening,Ordinal,"(0= <20 years, 1=20-39 years, 2=40-59 years, 3=60+ years)"
+Sociodemographic,DEMO,HHREdu,Household reference person education level,HHRefPersonEdu,Highest education level of household reference person,Ordinal,"(0=Incomplete high school or lower, 1=Completed High School to Incompleted College, 2= College graduate or higher)"
+Sociodemographic,DEMO,HHSizCat,Number of people in household,NumberinHousehold,Total number of people in household,Ordinal,"(0=3 or less, 1=4-5, 2=6 or more)"
+Sociodemographic,DEMO,FamIncC,Family income,FamilyIncome,Total annual family income (categorized as per NHANES),Ordinal,"0=Under $20,000, 1=$20,000 - $34,999, 2=$35,000 - $54,999, 3=$55,000 - $74,999, 4=$75,000 and Over"
+Sociodemographic,DEMO,FamPIRCat,Ratio of family income to poverty,PovertyIncomeRatio,Ratio of family income to poverty,Ordinal,"(0=1st quartile, 1=2nd quartile, 2=3rd quartile, 3=4th quartile)"
+Sociodemographic,DEMO,RaceEth,Race and Ethnicity,RaceEthnicity,Race and ethnicity (as per NHANES),Categorical,"(0=Hispanic, 1=Non-Hispanic White, 2=Non-Hispanic Black, 3=Other)"
+Sociodemographic,ACQ,LangAcc,Languages spoken at home,LanguageSpoken,Language spoken at home,Ordinal,"(0=No English, 1=Combination English and another, 2=English only)"
+Sociodemographic,ACQ,AccScore,Acculturation score,Acculturation,"Acculturation Score = Nativity Acculturation Score (NatAcc) + Language spoken at home (LangAcc) based on Kandula et al., 2008",Ordinal,Nativity Acculturation Score (natvity) + Language spoken at home (language)
+Health status,BMX,BMXWT,Weight,Weight,Weight (kg),Continuous,
+Health status,BMX,BMXHT,Standing Height,Height,Standing Height (cm),Continuous,
+Health status,BMX,BMXWAIST,Waist Circumference,WaistCircum,Waist circumference (cm),Continuous,
+Health status,BMX,BMIcat,BMI,BMI,"Body-mass-index (BMI) by categories: Underweight < 5th percentile, Healthy <85th percentile, 85th≤Overweight<95th, Obese ≥95th percentile",Ordinal,
+Health status,TCHOL,HTChol,High cholesterol level,HighCholesterol,Elevated total cholesterol (High if >= 170mg/dL),Ordinal,"(0=Normal TC, 1=High TC) (High if >= 170mg/dL)"
+Health status,BPX,hypten,Hypertension,Hypertension,"Hypertensive and defined as follows: Systolic blood pressure >=120 mmHg or  diastolic blood pressure >=80 mmHg, 
+and for age < 13, under above condition, or systolic blood pressure  >= 90% percentile, or diastolic blood pressure percentile >=90% percentile",Ordinal,"(0=Not hypertensive, 1=Hypertensive)"
+Sociodemographic,FSQ,FdInHH,Household food insecurity,HHFoodInsecurity,Household food insecurity level,Ordinal,"(0=Fully food secure, 1=Marginally food secure, 2=Food insecure without hunger, 3=Food insecure with hunger)"
+Sociodemographic,FSQ,FdInCH,Child food insecurity,ChildFoodInsecurity,Child food insecurity level,Ordinal,"(0=Fully food secure, 1=Marginally food secure, 2=Food insecure without hunger, 3=Food insecure with hunger)"
+Sociodemographic,FSQ,FdInAD,Adult food insecurity,AdultFoodInsecurity,Adult food insecurity level,Ordinal,"(0=Fully food secure, 1=Marginally food secure, 2=Food insecure without hunger, 3=Food insecure with hunger)"
+Sociodemographic,FSQ,FdStmp,Authorized or received food stamps ever,FoodStamps,Ever been authorized for food stamps?,Binary,"(0=No, 1=Yes)"
+Sociodemographic,FSQ,WIC,Household WIC received,WIC,"Did household receive benefits from Women, Infants, and Children (WIC) program before?",Binary,"(0=No, 1=Yes)"
+Sociodemographic,FSQ,Hager2Q,Food insecurity questions,FoodInsecurityQues,"2-item Food Insecurity by Hager et al., 2010",Binary,"(0=Food Secure, 1=Food Insecure)"
+Sociodemographic,HOQ,HOD050,Number of rooms in home,NumberRoomsinHome,Number of rooms in home,Continuous,
+Sociodemographic,HOQ,HOQ065,Home ownership,HomeOwnership,Home owned or bought or rented or other,Categorical,"(0=Home owned/being bought, 1=Renting, 2=Other arrangement)"
+Sociodemographic,HIQ,HIns4,Health insurance,Insurance,Health insurance status,Ordinal,"(0=Private insurance, 1=Medicaid/CHIP, 2=Other insurance type, 3=Not insured)"
+Health status,HUQ,HUQ020,Health changes,HealthChanges,Health now compared with 1 year ago,Categorical,"(0=Better, 1=Same, 2=Worse)"
+Health status,HUQ,HUQ090,Mental health visit,MentalHealthVisit,Mental health professional visit in past year,Binary,"(0=No, 1=Yes)"
+Sociodemographic,HUQ,OvntPT,Overnight hospitalization last year,OvernightHospitalization,Overnight hospital stays in past year? (exclude staying emergenecy room),Binary,"(0=No, 1=Yes)"
+Health status,HUQ,HealthCond,General Health Condition,GeneralHealth,Self-reported general health condition,Ordinal,"(0=Excellent/Very Good, 1=Good, 2=Fair/Poor)"
+Sociodemographic,HUQ,RoutineHCplace,Routine healthcare visit,RoutineHealthcarePlace,Has a routine place to go for healthcare,Binary,"(0=No, 1=Yes)"
+Sociodemographic,HUQ,TypeHCplace,Type of healthcare visit the most,TypeHealthcarePlace,Type of place most often go for healthcare,Categorical,"(0=Clinic, health center, Doctor’s office, HMO, Outpatient, 1=Hospital ER, 2=Some other place)"
+Sociodemographic,HUQ,TimesHCLastYr,Number of times received healthcare last year,NumberHealthcare,Number of times received healthcare over past year,Ordinal,"(0=0, 1=1, 2=2-3, 3=4 or more)"
+Other lifestyle behaviors,PFQ,PLimit,Physical limitation,PhysicalLimit,Short or Long-term physical limitations,Ordinal,"(0=No limitations, 1=Short-term limitation, 2=Long-term limitation)"
+Other lifestyle behaviors,PAQ,PAminWk,Physical activity per week,PhysicalActivity,Recreational/leisure physical activity minutes per week,Continuous,
+Other lifestyle behaviors,PAQ,ScreenTime,Screen time per day,ScreenTime,Average hours of screen time/sitting time per day,Continuous,
+Health status,MCQ,MCQ010,Lifetime asthma,Asthma,Ever been told (by doctor or other health professional) have asthma?,Binary,"(0=No, 1=Yes)"
+Health status,MCQ,MCQ053,Anemia Treatment,Anemia,Taking treatment for anemia in past 3 months,Binary,"(0=No, 1=Yes)"
+Health status,MCQ,MCQ092,Received Blood Transfusions,BloodTransfusion,Ever received blood transfusions?,Binary,"(0=No, 1=Yes)"
+Health status,MCQ,AgeAsthma,Age when first had asthma,AgeAsthma,Age when first had asthma,Continuous,
+Health status,MCQ,StillAsthma,Current asthma,CurrentAsthma,Have lifetime asthma and still have asthma,Binary,"(0=No, 1=Yes)"
+Health status,RXQ,Rx30Days,Taken prescription drugs last month,PrescriptionDrug,Taken prescription drugs in the past 30 days,Binary,"(0=No, 1=Yes)"
+Diet,DBQ,MealsOut,Meals out of home per week,MealsOutofHome,Number of times eat meals not from home per week,Continuous,
+Sociodemographic,DBQ,InSchool,Attend kindergarten through high school,InSchool,Currently attending school,Binary,"(0=No, 1=Yes)"
+Diet,DBQ,SchBkfst,School with complete breakfast,SchoolBreakfast,School serve complete breakfast each day,Categorical,"(0=No, 1=Yes, 2=Not attending school)"
+Diet,DBQ,SchLunch,School with complete lunch,SchoolLunch,School serve complete lunch each day,Categorical,"(0=No, 1=Yes, 2=Not attending school)"
+Diet,DBQ,NwkLunch,School lunch per week,NumberSchoolLunch,Number of times getting school lunch per week,Continuous,
+Diet,DBQ,NwkBkfast,School breakfast per week,NumberSchoolBreakfast,Number of times getting school breakfast per week,Continuous,
+Diet,DBQ,Milk30Days,Milk intake past 30 days,MilkIntake,Milk product consumption in past 30 days,Ordinal,"(0=Never, 1=Rarely/less than once a week, 2=Sometimes/once a week or more but less than once a day, 3=Often/once a day or more)"
+Diet,DBQ,SchMeal,School with complete breakfast or lunch per day,SchoolMeal,School serve complete breakstfast and/or lunch each day,Binary,"(0=No, 1=Yes)"
+Diet,DBQ,NwkMeals,Number of meals from School,NumberSchoolMeals,Number of times getting school meal per week,Continuous,
+Diet,DBQ,MilkType,Type of milk drink,MilkType,Type of milk regularly drink,Ordinal,"(0=Doesn't drink milk, 1=skim/fat-free milk, 2=1% milk, 3=2% milk, 4=Whole/full-fat milk)"
+Diet,DIET24,GTot,Total whole and refined grains intake past 24 hours,TotalGrain24Hr ,Total whole and refined grains (oz. eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,GRefine,Refined or non whole grains intake past 24 hours,RefinedGrain24Hr,Refined or non-whole grains (oz. eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,GWhole,Whole grains intake past 24 hours,WholeGrain24Hr,Whole grains (oz. eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,VTot,Total vegetables intake past 24 hours,TotalVeg24Hr,"Total dark green, red and orange, starchy, and other vegetables; excludes legumes (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,VDrkGr,Dark green vegetables intake past 24 hours,DarkGrnVeg24Hr,Dark green vegetables (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,VRedOrTot,Tomatoes and oranges intake past 24 hours,TomOrange24Hr,Total red and orange vegetables (tomatoes + other red and orange) (cup eq.) in previous 24 hours,Continuous,
+Diet,DIET24,VRedOr,Other red vegetables intake past 24 hours,RedVeg24Hr,"Other red and orange vegetables, excluding tomatoes and tomato products (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,VTomato,Tomatoes intake past 24 hours,Tomato24Hr,Tomatoes and tomato products (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,VStarchTot,Total starchy vegetables intake past 24 hours,TotStarchVeg24Hr,Total starchy vegetables (white potatoes + other starchy) (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,VStarchPot,White potatoes intake past 24 hours,Potato24Hr,White potatoes (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,VStarchOth,Other starchy vegetables intake past 24 hours,OthStarchVeg24Hr,"Other starchy vegetables, excluding white potatoes (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,VOther,Other vegetables intake past 24 hours,OthVeg24Hr,Other vegetables not in the vegetable components listed above (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,Legume,Legume intake past 24 hours,Legume24Hr,Number of cooked dry beans and peas cup equivalents(cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,FTot,Total fruits intake past 24 hours,TotFruit24Hr,Total intact or cut fruits and fruit juices (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,FCitMlB,Citrus and melons and berries intake past 24 hours,IntactFruit24Hr,"Intact fruits (whole or cut) of citrus, melons, and berries (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,FOther,Other fruits intake past 24 hours,OthFruit24Hr,"Intact fruits (whole or cut); excluding citrus, melons, and berries (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,DTot,Total dairy intake past 24 hours,Dairy24Hr,"Total milk, yogurt, cheese, and whey (cup eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,DMilk,Milk intake past 24 hours,Milk24Hr,Fluid milk and calcium fortified soy milk (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,DYogurt,Yogurt intake past 24 hours,Yogurt24Hr,Yogurt (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,DCheese,Cheese intake past 24 hours,Cheese24Hr,Cheese (cup eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,PTot,Total protein intake past 24 hours,TotProtein24Hr,"Total meat, poultry, seafood, organ meats, cured meat, eggs, soy, and nuts and seeds; excludes legumes (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,Pmps,Total meat intake past 24 hours,TotMeat24Hr,"Total meat, poultry, seafood, organ meats, and cured meat (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PMeat,Red meat intake past 24 hours,RedMeat24Hr,"Beef, veal, pork, lamb, game meat; excludes organ meats and cured meat (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PFrank,Cured meat intake past 24 hours,CuredMeat24Hr,"Cured/luncheon meat made from beef, pork, or poultry (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,POrgan,Organ meat intake past 24 hours,OrganMeat24Hr,"Organ meat from beef, veal, pork, lamb, game, and poultry (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PPoult,Poultry intake past 24 hours,Poultry24Hr,"Chicken, turkey, Cornish hens, and game birds; excludes organ meats and cured meat (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PFishLow,Low n3 fatty acids seafood intake past 24 hours,FishLowFat24Hr,"Seafood (finfish, shellfish and other seafood) low in n-3 fatty acids (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PFishHigh,High n3 fatty acids seafood intake past 24 hours,FishHighFat24Hr,"Seafood (finfish, shellfish and other seafood) high in n-3 fatty acids (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PEgg,Eggs intake past 24 hours,Eggs24Hr,"Eggs (chicken, duck, goose, quail) and egg substitutes (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PSoy,Soy products intake past 24 hours,Soy24Hr,"Soy products, excluding calcium fortified soy milk and immature soybeans (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,PNut,Nuts intake past 24 hours,Nuts24Hr,"Peanuts, tree nuts, and seeds, excludes coconut (oz. eq.) intake in previous 24 hours",Continuous,
+Diet,DIET24,Oils,Oils intake past 24 hours,Oils24Hr,Oils (grams) intake in previous 24 hours,Continuous,
+Diet,DIET24,SolidFat,Solid fat intake past 24 hours,SolidFat24Hr,Solid fats (grams) intake in previous 24 hours,Continuous,
+Diet,DIET24,AddSugars,Foods added sugars intake past 24 hours,AddedSugar24Hr,Added sugars (tsp. eq.) intake in previous 24 hours,Continuous,
+Diet,DIET24,Alcohol,Alcohol intake past 24 hours,Alcohol24Hr,Alcoholic beverages (no. of drinks) intake in previous 24 hours,Continuous,
+Other lifestyle behaviors,SMQ,HHSmkNum,Number of smokes in home,NumSmokersinHome,Total number of smokers in home,Continuous,
+Other lifestyle behaviors,SMQ,HHSmk,Exposed to secondhand smoke at home,SecondhandSmoke,Lives with someone who smoke tobacco inside the home,Binary,"(0=No, 1=Yes)"
+Other lifestyle behaviors,SMQ,Smk5Days,Recent tobacco use,TobaccoUse,Use tobacco/nicotine last 5 days,Binary,"(0=No, 1=Yes)"
+Sociodemographic,PUQ,Pesticide,Chemical use in lawn/garden,Pesticide,Chemical products used to kill weeds in the past 7 days,Binary,"(0=No, 1=Yes)"
+,,WTINT2YR,,,,Survey,
+,,WTINT4YR,,,,Survey,
+,,WTMEC2YR,,,,Survey,
+,,WTMEC4YR,,,,Survey,
+,,SDMVPSU,,,,Survey,
+,,SDMVSTRA,,,,Survey,
+,,cohort,"1=preDM/DM(12-19y), No diabetes dx",,,Binary,"(0=No, 1=Yes)"
